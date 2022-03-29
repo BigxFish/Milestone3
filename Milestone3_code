@@ -133,25 +133,38 @@ void FFT_calcs(){
  * The following array is for testing only because the adalm cannot provide a signal across multiple frequencies at once.
  */
 
-  power_D = data[10];
-  power_D = power_D * power_D/100;
+
+  power_A = data[10];
+  power_A = power_A * power_A/100;
   power_T = data[6];
   power_T = power_T * power_T/100;
 
-  
 /*
+  data[1] = 17;
+  data[2] = 18;
+  data[3] = 19;
+  data[4] = 20;
+  data[5] = 19;
+  data[6] = 22;
+  data[7] = 21;
+  data[8] = 25;
+  data[9] = 24;
+  data[10] = 27;
+  data[11] = 24;
+
+
   for (int i=1;i<4;i++){
     power_D += data[i];
   }
   power_D = power_D/3;
-  power_D = power_D * power_D;
+  power_D = power_D * power_D/100;
   
 
   for (int i=5;i<9;i++){
     power_T += data[i];
   }
   power_T = power_T/4;
-  power_T = power_T * power_T;
+  power_T = power_T * power_T/100;
   Serial.println(power_T);
 
 
@@ -159,9 +172,9 @@ void FFT_calcs(){
     power_A += data[i];
   }
   power_A = power_A/4;
-  power_A = power_A * power_A;
+  power_A = power_A * power_A/100;
   Serial.println(power_A);
-  */
+*/  
 }
 
 
